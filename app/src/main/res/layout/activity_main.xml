@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg_color"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/white"
+        android:text="初次打开APP(第二次打开不用点)"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/white"
+        android:text="请依次点击以下两个按钮"
+        />
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/readFromXML"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sub_btn_tick_color="@color/white"
+        android:text="读取XML"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:sub_btn_duration="3000" />
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/write"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sub_btn_tick_color="@color/white"
+        android:text="写入数据库"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:sub_btn_duration="3000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/white"
+        android:text="若已经点击过上面两个按钮"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/white"
+        android:text="才可以点击以下按钮"
+        />
+    <Button
+        android:id="@+id/show"
+        android:layout_width="350px"
+        android:layout_height="130px"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:text="跳转单词页"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_btn_summit"
+        android:background="@drawable/btn_complain_summit_selector"/>
+    
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:id="@+id/ed_search"
+            android:textColor="@color/white"
+            android:hint="请在此输入"
+            android:textColorHint="@color/white"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="200px"
+            android:layout_height="90px"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:text="搜索"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/color_btn_summit"
+            android:background="@drawable/btn_search"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="divider">#3CB371</color>
+    <color name="background">#9AFF9A</color>
+    <color name="green_normal">#37C000</color>
+    <color name="green_pressed">#30A070</color>
+    <color name="common_bg_color">#191C25</color>
+    <color name="recyclerview_color">#222533</color>
+    <color name="white_50_opacity">#80FFFFFF</color>
+</resources>

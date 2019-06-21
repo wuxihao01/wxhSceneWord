@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<english>
+    <part name="part3">
+        <chapter name="个人背景">
+            <scene name="教育背景">
+                <word name="education~教育">
+                    <use name="educate">
+                        教育
+                    </use>
+                    <use name="educated">
+                        受过`````的教育;有教养的
+                    </use>
+                    <sentence name="Jack is an educated person-always speaking in an articulate way">
+                        杰克是一个受过教育的人，说话口齿总是很清晰
+                    </sentence>
+                    <sentence name="Receiving an education is beneficial to a person's success">
+                        受教育对一个人的成功是有益的
+                    </sentence>
+                </word>
+
+                <word name="overseas~海外的">
+                    <use name="an overseas student">
+                        留学生
+                    </use>
+                    <use name="study overseas">
+                        出国留学
+                    </use>
+                    <use name="study abroad">
+                        出国留学
+                    </use>
+                    <sentence name="I studied overseas at the age of 17 and returned last year">
+                        我17岁时出国留学，去年才返回
+                    </sentence>
+                </word>
+
+                <word name="academic~学术的">
+                    <use name="academic performance">
+                        学业表现
+                    </use>
+                    <sentence name="Tom's academic performance didn't live up to his fater's expections">
+                        汤姆在校的学业表现并未达到父亲的期许。
+                    </sentence>
+                    <sentence name="live up to sb's expections">
+                        达到某人的期许
+                    </sentence>
+                </word>
+
+                <word name="diploma~文凭">
+                    <sentence name="a high school diploma holder">
+                        高中文凭持有者
+                    </sentence>
+                    <sentence name="I hold a diploma in management">
+                        我有管理学的文凭
+                    </sentence>
+                </word>
+
+                <word name="degree~学位">
+                    <use name="a bachelor's degree">
+                        学士学位
+                    </use>
+                    <use name="a master's degree">
+                        硕士学位
+                    </use>
+                    <use name="a doctorate degree">
+                        博士学位
+                    </use>
+                    <sentence name="I hold a bachelor's degree in physics from Oxford University">
+                        我获得了牛津大学的物理学学士学位
+                    </sentence>
+                </word>
+
+                <word name="graduate~毕业；毕业生">
+                    <use name="graduate from...">
+                        从。。。。。。毕业
+                    </use>
+                    <sentence name="Quite a few college graduates have anxiety about their future">
+                        很多大学毕业生对未来感到很焦虑。
+                    </sentence>
+                    <sentence name="It has been 10 years since I graduated from Oxford University">
+                        我毕业于牛津大学，至今已经有10年时间了。
+                    </sentence>
+                </word>
+
+                <word name="major~主修；专业">
+                    <use name="minor">
+                        辅修；辅系
+                    </use>
+                    <use name="major in...">
+                        主修。。。
+                    </use>
+                    <use name="minor in...">
+                        辅修。。。
+                    </use>
+                    <sentence name="I majored in biology.">
+                        我主修生物学。
+                    </sentence>
+                    <sentence name="I was a biology major.">
+                        我主修生物学。
+                    </sentence>
+                </word>
+
+                <word name="take a course in/on...~上。。。的课程">
+                    <use name="attend a course in/on...">
+                        上。。。的课程
+                    </use>
+                    <sentence name="I took a course in international trade in my sophmore year.">
+                        我大二时候修过国际贸易的课程
+                    </sentence>
+                </word>
+
+                <word name="vocational~职业的">
+                    <use name="a vocational school">
+                        职业学校
+                    </use>
+                    <sentence name="Joey attended a vocational school after he had made up his mind to become an electrician">
+                        乔伊下定决心成为电工后，去上了职业学校。
+                    </sentence>
+                </word>
+
+                <word name="scholarship~奖学金">
+                    <use name="on a scholarship">
+                        靠奖学金
+                    </use>
+                    <use name="apply for a scholarship">
+                        申请奖学金
+                    </use>
+                    <sentence name="Much to my surprise,Mike went to Harvard on a full scholarship">
+                        令我相当吃惊的是，迈克靠全额奖学金上了哈佛。
+                    </sentence>
+                </word>
+            </scene>
+
+
+            <scene name="荣誉奖项">
+                <word name="honor~荣誉（不可数）；令人尊敬的人、事、物（可数）">
+                    <use name="honors">
+                        优异成绩；荣誉课程（恒用复数）
+                    </use>
+                    <use name="pass a test with honors">
+                        以优异成绩通过考试
+                    </use>
+                    <sentence name="I graduated from Yale with honors in psychology.">
+                        我已优等成绩从耶鲁大学心理学专业毕业。
+                    </sentence>
+                    <sentence name="You have to deal cautiously with this issue.Otherwise, your honor will be at risk">
+                        你必须谨慎处理这个问题。否则，你的名字岌岌可危。
+                    </sentence>
+                    <sentence name="Tom's brother is an honor to his whole family.">
+                        汤姆的哥哥是他们全家族的光荣。
+                    </sentence>
+                </word>
+
+                <word name="reward~奖赏，报酬；">
+                    <use name="reward sb for +n./v -ing">
+                        因某事奖赏某人
+                    </use>
+                    <use name="reward sb with sth">
+                        用某物奖赏某人
+                    </use>
+                    <sentence name="My company rewarded me with seven days of paid leave for my excellent performance throughout the year.">
+                        我的公司因为我全年的优异表现，奖励我7天带薪假期。
+                    </sentence>
+                    <sentence name="You deserve a reward for being so hardworking and willing to help">
+                        你那么努力且愿意帮忙，因而值得获得奖赏。
+                    </sentence>
+                    <sentence name="We are now reaping the rewards for our effort">
+                        我们正在收获因为努力而获得的回报。
+                    </sentence>
+                </word>
+
+                <word name="award~授予（奖项）；奖项">
+                    <use name="win/receive/get an award for sth">
+                        因某事获得奖项
+                    </use>
+                    <use name="award sb sth/award sth to sb">
+                        将某奖项授予某人
+                    </use>
+                    <sentence name="Nick received an award for his sales figures in the first quarter.">
+                        尼克因在第一季的销售数字而获颁奖项。
+                    </sentence>
+                    <sentence name="Carlos was awarded second prize in the English speech contest.">
+                        卡洛斯被授予英语演讲比赛二等奖。
+                    </sentence>
+                </word>
+
+                <word name="place~（竞赛）名次">
+                    <use name="win first/secoond/third...place/prize">
+                        赢得第一/二/三。。。名
+                    </use>
+                    <sentence name="Eric won first place in an essay competition for three years in a row">
+                        埃里克连续三年获得短文比赛的第一名。
+                    </sentence>
+                </word>
+            </scene>
+
+            <scene name="外语水平">
+                <word name="fluent~流利的">
+                    <use name="fluency">
+                        流利度
+                    </use>
+                    <sentence name="I'm a fluent English speaker.=I'm fluent in English.=I'm speak fluent English">
+                        我英语说得很流利。
+                    </sentence>
+                </word>
+
+                <word name="accent~口音，腔调">
+                    <sentence name="I speak English with a flawless American accent">
+                        我能说一口口音完美无瑕的美式英语。
+                    </sentence>
+                </word>
+
+                <word name="communicate~沟通">
+                    <use name="communication">
+                        沟通
+                    </use>
+                    <use name="communicate with...">
+                        与。。。交流
+                    </use>
+                    <sentence name="I have little difficulty communicating with people who speak English.">
+                        我与说英语的人沟通没有困难。
+                    </sentence>
+                </word>
+
+                <word name="command~（对语言的）掌握，运用能力">
+                    <use name="have a good command of...">
+                        对。。。有很好的造诣
+                    </use>
+                    <sentence name="Shirley has a good command of spoken English.">
+                        雪梨有很好的英语口语造诣。
+                    </sentence>
+                </word>
+
+                <word name="bilingual~会说两种语言的；会说两种语言的人">
+                    <use name="multilingual">
+                        会说多种语言的
+                    </use>
+                    <sentence name="Raised in a bilingual family,I have a good command of both English and Chinese.">
+                        我成长于一个双语家庭，因此对中英文有很好的造诣。
+                    </sentence>
+                </word>
+
+                <word name="conversation~会话">
+                    <use name="conversational">
+                        会话的
+                    </use>
+                    <sentence name="I can read and write English, but I have trouble speaking English fluently enough to carry on a conversation.">
+                        我可以读写英语，但在把英语说得流利到能持续一段对话这方面我有困难。
+                    </sentence>
+                    <sentence name="Your Spanish is good, but you need to improve your conversational skills.">
+                        你的西班牙语很棒，但是你需要提升你的会话技巧。
+                    </sentence>
+                </word>
+            </scene>
+
+            <scene name="工作经历">
+                <word name="internship~实习期">
+                    <use name="intern">
+                        实习生
+                    </use>
+                    <sentence name="Judy is a competitive applicant because last year she was an intern in our company.">
+                        朱迪是个有竞争力的申请者，因为她去年曾是我们公司的实习生。
+                    </sentence>
+                </word>
+
+                <word name="experience~经验（不可数）；经历（可数）">
+                    <use name="experienced">
+                        经验丰富的
+                    </use>
+                    <use name="be experienced in...">
+                        在。。。方面经验丰富
+                    </use>
+                    <sentence name="I have accumulated a lot of experience from my previous job">
+                        我从前一份工作中积累了许多经验。
+                    </sentence>
+                    <use name="accumulate">
+                        累积
+                    </use>
+                    <sentence name="I'm experienced in teaching English.">
+                        我有丰富的英语教学经验。
+                    </sentence>
+                </word>
+
+                <word name="appoint~任命">
+                    <use name="appoint sb as+职位名称">
+                        任命某人为。。。
+                    </use>
+                    <use name="appoint sb to">
+                        任命某人从事。。。
+                    </use>
+                    <sentence name="Because I was very careful at work,my boss appointed me as secretary.">
+                        因为我工作非常谨慎，我的老板将我任命为秘书。
+                    </sentence>
+                    <sentence name="The boss appointed Lisa to oversee the handling of the case.">
+                        老板任命丽萨去监督那个案子的处理情况。
+                    </sentence>
+                </word>
+
+                <word name="nomiate~提名">
+                    <use name="nominate sb as...">
+                        提名某人为。。。
+                    </use>
+                    <sentence name="I was nominated as the best employee by my supervisor.">
+                        我被上司提名为最佳员工。
+                    </sentence>
+                </word>
+
+                <word name="demonstrate~展示">
+                    <sentence name="My previous job was to demonstrate products to customers.">
+                        我上一份工作就是向顾客展示产品。
+                    </sentence>
+                </word>
+            </scene>
+
+            <scene name="个人优势">
+                <word name="be able to~有能力">
+                    <use name="be capable of+n./v -ing">
+                        有能力
+                    </use>
+                    <sentence name="I am able to work well under constant pressure.=I am capable of working well under constant pressure">
+                        我有能力在持续的压力下把工作完成得很好。
+                    </sentence>
+                </word>
+
+                <word name="qualification~资格；资格证书">
+                    <use name="qualified">
+                        合格的
+                    </use>
+                    <use name="be qualified for sth">
+                        有资格获得某事
+                    </use>
+                    <use name="be qualified to">
+                        有资格从事。。。
+                    </use>
+                    <sentence name="A diploma in management is a vital qualification for this job.">
+                        管理学文凭是获得这份工作的重要资格。
+                    </sentence>
+                    <sentence name="The two candidates are both qualified for this job.">
+                        这两位候选人都有资格做这份工作。
+                    </sentence>
+                </word>
+
+                <word name="expertise~专业知识">
+                    <use name="have the expertise to">
+                        有做。。。的专业知识
+                    </use>
+                    <sentence name="Peter has the expertise to explain grammar points to students">
+                        彼得具备向学生讲解语法重点的专业知识。
+                    </sentence>
+                </word>
+
+                <word name="take on sth~承担某事">
+                    <sentence name="I always offer to take on the jobs others try to avoid">
+                        我总是主动承担别人试图逃避的工作。
+                    </sentence>
+                </word>
+
+                <word name="be familiar with...~熟悉。。。">
+                    <use name="be accquainted with...">
+                        熟悉。。。
+                    </use>
+                    <sentence name="I am quite familiar with this field.">
+                        我对这一领域非常熟悉。
+                    </sentence>
+                </word>
+
+                <word name="interpersonal~人与人之间的">
+                    <use name="interpersoanl relations">
+                        人际关系
+                    </use>
+                    <sentence name="It is easy for me to maintain good interpersonal relations with my co-workers">
+                        对我来说，与同事维持良好的人际关系是很容易的事情。
+                    </sentence>
+                </word>
+
+                <word name="dynamic~精力充沛的">
+                    <sentence name="Laura is so dynamic that she is able to work day and night">
+                        劳拉非常有活力，以至于她可以夜以继日地工作。
+                    </sentence>
+                </word>
+
+                <word name="confident~有信心的">
+                    <use name="be confident in/of sth">
+                        对某事有信心
+                    </use>
+                    <sentence name="Based on my previous performance in sales,I'm confident that I can bring in considerable revenue for your company">
+                        基于我以往的销售业绩，我有信心为公司带来可观的收益。
+                    </sentence>
+                </word>
+
+                <word name="efficient~有效率的">
+                    <use name="efficiency">
+                        效率
+                    </use>
+                    <sentence name="I'm very efficient at dealing with customer complaints.">
+                        我在处理客人投诉这方面效率很高。
+                    </sentence>
+                    <sentence name="My former co-workers were impressed by my efficiency.">
+                        我以前的同事都对我的工作效率叹服。
+                    </sentence>
+                </word>
+
+                <word name="sb's strong point~某人的强项">
+                    <use name="sb's strength">
+                        某人的强项
+                    </use>
+                    <sentence name="My greatest strength is that I'm capable of coordinating large projects.">
+                        我最厉害的强项在于我能够协调大型项目。
+                    </sentence>
+                </word>
+
+                <word name="pursue~追求">
+                    <use name="pursuit">
+                        追求
+                    </use>
+                    <use name="in pursuit of...">
+                        为追求。。。
+                    </use>
+                    <sentence name="Cliff wants to pursue a steady career and settle down.">
+                        克里夫想追求得到一份稳定的职业并安定下来。
+                    </sentence>
+                    <sentence name="Shirley never got married because she spent her entire life in pursuit of her career goals.">
+                        雪莉未婚，因为她终其一生追求事业目标。
+                    </sentence>
+                </word>
+
+                <word name="keep/put one's nose to the grindstone~辛勤地工作">
+                    <use name="grindstone">
+                        磨石刀
+                    </use>
+                    <sentence name="I will keep my nose to the grindstone once I become a part of the team.">
+                        一旦我成为团队的一员，我就会辛勤地工作。
+                    </sentence>
+                </word>
+
+                <word name="potential~潜力；潜在的">
+                    <sentence name="I'm looking for a job where I can achieve my full potential.=I'm looking for a job where I can realize my full potential">
+                        我正在寻找一份能让我完全发挥潜能的工作。
+                    </sentence>
+                    <sentence name="I made some cold clls to our potential customers.">
+                        我向潜在顾客打了一些陌生拜访电话。
+                    </sentence>
+                </word>
+
+                <word name="permanent~长久的">
+                    <use name="temporary">
+                        暂时的
+                    </use>
+                    <sentence name="I'm looking for a permanent job,not a temporary one.">
+                        我正在寻找一份长久的工作，而不是暂时的。
+                    </sentence>
+                </word>
+
+                <word name="promote~升职">
+                    <use name="promotion">
+                        升职
+                    </use>
+                    <use name="get a promotion">
+                        获得升迁
+                    </use>
+                    <use name="be/get promoted to...">
+                        被升迁为。。。
+                    </use>
+                    <sentence name="The new employee was soon promoted to be the leader of a reserach group.">
+                        该新进职员不久即被升迁为研究组组长。
+                    </sentence>
+                </word>
+
+                <word name="prospect~成功的机会；前途（常用复数）">
+                    <sentence name="Mike has a dead-end job with no prospects.">
+                        迈克有一份没什么前途的工作。
+                    </sentence>
+                    <sentence name="What are the prospects of promotion in this job?">
+                        这份工作中获得升迁的前途如何？
+                    </sentence>
+                </word>
+
+                <word name="sharpen~加强">
+                    <use name="improve">
+                        加强
+                    </use>
+                    <sentence name="I will continuously sharpen my professional skills through practice and learn form my co-workers.">
+                        我会通过实践和向同事学习，不断提高我的专业技能。
+                    </sentence>
+                </word>
+
+                <word name="start off with/by/as...~从。。。开始">
+                    <sentence name="I will start off as a receptionist and try to get a promotion within a year.">
+                        我会从接待员干起，争取一年内晋升。
+                    </sentence>
+                </word>
+
+                <word name="start up one's own business~自己创业">
+                    <sentence name="I want to start up my own business in the near future">
+                        我想在不久的将来创办我自己的事业。
+                    </sentence>
+                </word>
+
+                <word name="work one's way up~（从社会底层）往上爬">
+                    <sentence name="I want to work for a large corporation and work my way up.">
+                        我想在大公司工作，然后一步步往上爬。
+                    </sentence>
+                </word>
+
+                <word name="in the long run~从长远看">
+                    <sentence name="The job has short-term benefits but will not help your career progress in the long run.">
+                        这份工作有短期的好处，但从长远看，它对你的职业进展没什么帮助。
+                    </sentence>
+                </word>
+            </scene>
+        </chapter>
+
+        <chapter name="求职面试">
+            <scene name="描述理想职业与职业名称">
+                <word name="ideal~理想的">
+                    <use name="ideal/dream job">
+                        理想工作
+                    </use>
+                    <sentence name="A job that deals with people would be ideal for me">
+                        与人打交道的工作对我来说是颇理想的。
+                    </sentence>
+                    <sentence name="My ideal job is to work as a tour guide.">
+                        我的理想工作是当导游
+                    </sentence>
+                </word>
+                <word name="vovation~行业">
+                    <use name="vocation">
+                        职业的
+                    </use>
+                    <use name="vocational school">
+                        职业学校
+                    </use>
+                    <sentence name="Mike chose translating as his vocation">
+                        麦克选择翻译作为自己的职业。
+                    </sentence>
+                </word>
+                <word name="career~职业">
+                    <use name="career prospects">
+                        职业前景
+                    </use>
+                    <use name="a career change">
+                        转换职业
+                    </use>
+                    <sentence name="Julia's career as an actress laeted 20 years.">
+                        茱莉亚的演员生涯持续了二十年。
+                    </sentence>
+                    <sentence name="Helen hopes to pursue a career in medicine.">
+                        海伦希望能找到医学领域的职业。
+                    </sentence>
+                </word>
+                <word name="position~职位">
+                    <use name="take the position as...">
+                        担任...的职位
+                    </use>
+                    <sentence name="Jack got a position in a law firm.">
+                        杰克在律师事务所谋得一职。
+                    </sentence>
+                    <sentence name="Mr.Samuelson died soon sfter he took the position as mayor">
+                        萨缪森先生担任市长没多久就去世了。
+                    </sentence>
+                </word>
+                <word name="interact~互动">
+                    <use name="interact with">
+                        与...互动
+                    </use>
+                    <sentence name="You should interact with people rather than staying at home by yourself">
+                        你该和别人互动，而不要一个人呆在家里。
+                    </sentence>
+                </word>
+                <word name="involve~包含">
+                    <sentence name="I prefer jobs that involve a great deal of communication with customers.">
+                        我比较喜欢包含与顾客大量沟通的工作。
+                    </sentence>
+                </word>
+                <word name="broaden~使加宽">
+                    <use name="broaden sb's horizons">
+                        开阔某人的视野
+                    </use>
+                    <sentence name="Being a journalist broadens my horizons.">
+                        记者的身份能让我拓宽视野。
+                    </sentence>
+                </word>
+                <word name="challenging~挑战性的">
+                    <use name="challenge">
+                        激发
+                    </use>
+                    <use name="face/accept a challenge">
+                        面对/接受挑战
+                    </use>
+                    <sentence name="My job is challenging,but I like it very much.">
+                        我的工作很有挑战性，但我很喜欢。
+                    </sentence>
+                    <sentence name="Working in sales gives me the opportunity to challenge myself.">
+                        销售的工作让我有机会自我挑战。
+                    </sentence>
+                    <sentence name="Marion is now facing the biggest challenge of his career.">
+                        马里诺目前正面对职业生涯最大的挑战。
+                    </sentence>
+                </word>
+                <word name="decent~端正的">
+                    <use name="decent pay">
+                        还不错的薪水
+                    </use>
+                    <sentence name="Everyone hopes to get a decent job.">
+                        每人都希望得到一份体面的工作。
+                    </sentence>
+                    <sentence name="Jimmy earned decent pay at the publishing company.">
+                        吉米在出版公司的薪水还不错。
+                    </sentence>
+                </word>
+                <word name="atmosphere~气氛">
+                    <sentence name="I'm interested in working in an atmosphere where I can constantly learn.">
+                        我喜欢在不断学习的氛围中工作。
+                    </sentence>
+                    <sentence name="There is a very relaxed atmosphere in our company.">
+                        我们公司的气氛非常轻松。
+                    </sentence>
+                </word>
+                <word name="express~表达">
+                    <use name="expression">
+                        表达
+                    </use>
+                    <use name="expressive">
+                        表达的
+                    </use>
+                    <use name="express oneself">
+                        表达自己的意思
+                    </use>
+                    <use name="facial expressive of...">
+                        流露出...
+                    </use>
+                    <sentence name="David can express homself fluently in English.">
+                        戴维能用流利的英语表达自己的意思。
+                    </sentence>
+                    <sentence name="My sister's words were expressive of her anger.">
+                        我姐姐的话语流露出她的气愤。
+                    </sentence>
+                </word>
+                <word name="team~团队">
+                    <use name="teamwork">
+                        团队合作
+                    </use>
+                    <use name="teamwork-oriented">
+                        以团队工作为导向的
+                    </use>
+                    <use name="team up">
+                        团结合作
+                    </use>
+                    <sentence name="Let's team up and get the job done.">
+                        咋们团结合作把工作做完。
+                    </sentence>
+                    <sentence name="I want a job that provides a teamwork-oriented.">
+                        我想要一份有着团队合作环境的工作。
+                    </sentence>
+                </word>
+                <word name="staff~全体员工">
+                    <use name="staff development/training">
+                        职员发展
+                    </use>
+                    <use name="a staff of thirty">
+                        30位幕僚人员
+                    </use>
+                    <sentence name="All the staff members in our company are young and energetic.">
+                        我们公司的员工个个年轻，充满活力。
+                    </sentence>
+                    <sentence name="The primary school is staff with experienced teachers.">
+                        该小学配备了教学经验丰富的老师。
+                    </sentence>
+                </word>
+                <word name="advance~使进步">
+                    <use name="advancement">
+                        前进
+                    </use>
+                    <sentence name="Getting a master's degree is one way of advancing your career.">
+                        攻读硕士学位是让职业生涯更上一层的方法。
+                    </sentence>
+                    <sentence name="Kyle's rapid advancement in the company is due to his hard work.">
+                        凯尔在公司的迅速升迁是因为他的努力。
+                    </sentence>
+                </word>
+            </scene>
+            <scene name="履历与求职信">
+                <word name="resume~履历与求职信">
+                    <sentence name="Your resume is the first impression to your protential employer.">
+                        简历是你给未来雇主留下的第一印象。
+                    </sentence>
+                </word>
+                <word name="cover letter~求职信">
+                    <sentence name="A cover letter is a supplement to your resume.">
+                        求职信是简历的补充。
+                    </sentence>
+                </word>
+                <word name="apply~申请">
+                    <use name="applicant">
+                        申请人
+                    </use>
+                    <use name="application">
+                        申请
+                    </use>
+                    <use name="apply for a job">
+                        求职
+                    </use>
+                    <use name="an application form">
+                        申请表
+                    </use>
+                    <sentence name="I'm applying for a journalist position.">
+                        我正在申请记者职位。
+                    </sentence>
+                </word>
+                <word name="competent~有能力的">
+                    <use name="be competent for">
+                        有能力的
+                    </use>
+                    <sentence name="I think that Lisa will be competent for the position.">
+                        我认为莉萨将能担任这个职位。
+                    </sentence>
+                </word>
+                <word name="candidate~候选人">
+                    <sentence name="I think Brenda is the ideal candidate for the job.">
+                        我认为布伦达是这项工作最合适的人选。
+                    </sentence>
+                </word>
+                <word name="list~列表">
+                    <use name="on the list">
+                        在名单上
+                    </use>
+                    <use name="make a list">
+                        列清单
+                    </use>
+                    <sentence name="I didn't find my name on the list">
+                        我没有在名单上找到我的名字。
+                    </sentence>
+                    <sentence name="List the names of all of your classmates on his paper.">
+                        把你班上的所有同学的名字列在这张纸上。
+                    </sentence>
+                </word>
+                <word name="emphasize~强调">
+                    <use name="emphasis">
+                        强调
+                    </use>
+                    <use name="place/lay emphsis on ...">
+                        强调...
+                    </use>
+                    <sentence name="It is helpful to emphasize your best qualities properly in the resume">
+                        在简历上恰当的凸显你最优秀的特质很有帮助。
+                    </sentence>
+                    <sentence name="The manager placed emphsis on the need for teamwork in the meeting.">
+                        经理在这场会议中强调团队合作的必要性。
+                    </sentence>
+                </word>
+                <word name="job-hunt~找工作">
+                    <use name="job-hunting">
+                        找工作
+                    </use>
+                    <sentence name="At that time Andy had been job-hunting for three months.">
+                        那时候安迪已经找了三个月的工作了。
+                    </sentence>
+                </word>
+                <word name="proficient~熟练的">
+                    <use name="be proficient in ...">
+                        精通...
+                    </use>
+                    <sentence name="I am proficient in advertising planning.">
+                        我非常懂得广告策划。
+                    </sentence>
+                </word>
+                <word name="well-rounded~全面的">
+                    <sentence name="My work experience has afforded me a well-rounder skill set.">
+                        我的工作经验让我练就了一套全面的技能。
+                    </sentence>
+                    <sentence name="Gary hopes thst his son can receive a well-rounded education.">
+                        加里希望他儿子能接受全方位的教育。
+                    </sentence>
+                </word>
+                <word name="degree~学位">
+                    <use name="get/hold/have a bachelor's/master's degree in ">
+                        有某领域的学士/硕士学位
+                    </use>
+                    <sentence name="I got a bachelor's degree in accounting.">
+                        我获得了会计学士学位
+                    </sentence>
+                </word>
+                <word name="intrigue~使感兴趣">
+                    <sentence name="I was intrigued by the position description and decided to apply immediately.">
+                        我对这个职缺的概述很感兴趣，决定马上应征。
+                    </sentence>
+                </word>
+                <word name="headhunt~寻才">
+                    <sentence name="Nancy was headhunted by a rival firm.">
+                        南希被竞争对手给挖走了。
+                    </sentence>
+                </word>
+                <word name="recruit~征募">
+                    <sentence name="The real estate agency recruited Mark to be the head of their sales staff.">
+                        该房屋中介公司聘请马克担任业务领导。
+                    </sentence>
+                    <sentence name="We put all recruits through a week-long traing program.">
+                        我们让所有新成员参加为期一周的训练课程。
+                    </sentence>
+                </word>
+                <word name="strength~强项">
+                    <use name="weakness">
+                        弱点
+                    </use>
+                    <sentence name="Mandy's greatest strength is her keen attention to details.">
+                        曼迪最大的优点是她对细节的敏锐度。
+                    </sentence>
+                </word>
+            </scene>
+            <scene name="面试">
+                <word name="interview~面试">
+                    <use name="interviewer">
+                        面试官
+                    </use>
+                    <use name="interviewee">
+                        面试生
+                    </use>
+                    <use name="interview sb">
+                        面试某人
+                    </use>
+                    <use name="schedule an interview">
+                        安排面试
+                    </use>
+                    <sentence name="We interviewed five people for the job.">
+                        我们面试了5个应征该工作的人。
+                    </sentence>
+                    <sentence name="I'm so nervous sbout my job interview tomorrow.">
+                        我对明天的工作面试非常紧张。
+                    </sentence>
+                    <sentence name="We'll call within a week to schedule an interview.">
+                        我们会在一个星期内安排面试。
+                    </sentence>
+                </word>
+                <word name="corporation~大公司">
+                    <use name="corporate">
+                        公司的
+                    </use>
+                    <sentence name="An international corporation will take over our company next month.">
+                        一家跨国企业下个月会接管我们公司。
+                    </sentence>
+                    <sentence name="The company has a good corporate culture.">
+                        该公司由良好的企业文化。
+                    </sentence>
+                </word>
+                <word name="qualification~资历">
+                    <use name="acquire/gain qualications">
+                        获得学历
+                    </use>
+                    <sentence name="I believe that in this job,experience counts for more than paper qualifications.">
+                        担任这份工作，我相信经验比文凭更重要。
+                    </sentence>
+                </word>
+                <word name="have/get butterflies(in one's stomach)~忐忑不安">
+                    <sentence name="I always have butterflies in my stomach before a job interview.">
+                        面试前我总是忐忑不安。
+                    </sentence>
+                </word>
+                <word name="prospects~前途">
+                    <use name="good job/career prospects">
+                        好的工作/生涯前景
+                    </use>
+                    <sentence name="Every college graduate wants a job with good prospects.">
+                        每个大学毕业生都想找份有前途的工作。
+                    </sentence>
+                </word>
+                <word name="employ~雇用">
+                    <use name="employer">
+                        雇主
+                    </use>
+                    <use name="employee">
+                        员工
+                    </use>
+                    <use name="in the employ of sb">
+                        受雇于某人
+                    </use>
+                    <sentence name="We only employ easy-going and hard-working workers.">
+                        我们只雇用易于沟通、能吃苦耐劳的人。
+                    </sentence>
+                    <sentence name="I was secretly in the employ of a business competitor.">
+                        我曾秘密受雇于一家商业对手。
+                    </sentence>
+                </word>
+                <word name="evaluate~评估">
+                    <use name="evaluation">
+                        评估
+                    </use>
+                    <sentence name="The manager evaluates the workers on a regular basis.">
+                        经理定期考核员工。
+                    </sentence>
+                    <sentence name="The professor evaluated Brenda's writing and gave her a good grade.">
+                        教授评估布伦达的写作，并给了她好的成绩。
+                    </sentence>
+                </word>
+                <word name="adapt~使适应">
+                    <use name="adapt to +n">
+                        适应于...
+                    </use>
+                    <sentence name="I will quickly adapt to the work environment.">
+                        我会很快适应新的工作环境。
+                    </sentence>
+                </word>
+                <word name="compliment~赞美">
+                    <use name="commliment sb on sth">
+                        就某事赞赏某人
+                    </use>
+                    <sentence name="The compliment I gave Tracy made her smile.">
+                        我赞美特雷西的话让他眉开眼笑。
+                    </sentence>
+                    <sentence name="My co-workers all complimented me on my work.">
+                        我的同事都对我的工作态度赞赏有加。
+                    </sentence>
+                </word>
+                <word name="keep one's nose to the grindstone~辛勤的工作">
+                    <use name="grindstone">
+                        磨石
+                    </use>
+                    <sentence name="I will keep my nose to the grindstone to finish the task on time.">
+                        我会努力工作好如期完成任务。
+                    </sentence>
+                </word>
+                <word name="hire~雇用">
+                    <sentence name="Why should we hire you instead of someone else?">
+                        为什么我们要雇佣你而不是其他人呢？
+                    </sentence>
+                </word>
+                <word name="probation~试用期">
+                    <use name="probationary">
+                        试用期的
+                    </use>
+                    <use name="a period of probation">
+                        一段试用期
+                    </use>
+                    <use name="be on probation">
+                        试用
+                    </use>
+                    <sentence name="As a new employee,you will be on probatiobn for three months.">
+                        身为新员工，你会有3个月的试用期
+                    </sentence>
+                    <sentence name="The probationary period lasts three months.">
+                        试用期三个月
+                    </sentence>
+                </word>
+            </scene>
+            <scene name="一般工作内容">
+                <word name="routine~惯例">
+                    <use name="as a matter of routine">
+                        例行公事
+                    </use>
+                    <sentence name="It is Jack's daily routine to check his emails.">
+                        查看邮件是捷克的日常工作。
+                    </sentence>
+                    <sentence name="We double-check the packages as a matter of routine.">
+                        我们会例行公事地复查包裹。
+                    </sentence>
+                </word>
+                <word name="multitask~同时进行多种任务">
+                    <sentence name="It's important to be able to multitask when you are under pressure">
+                        你在压力下时，能够身兼多职很重要。
+                    </sentence>
+                </word>
+                <word name="shift~轮班">
+                    <use name="eight-hour shift">
+                        八小时工作制
+                    </use>
+                    <use name="day shift">
+                        日班
+                    </use>
+                    <use name="night shift">
+                        夜班
+                    </use>
+                    <sentence name="My father works shifts in a steel mill.">
+                        我父亲是一家炼钢厂的轮班工人。
+                    </sentence>
+                    <sentence name="I'm on the night shift today.">
+                        我今天上夜班。
+                    </sentence>
+                </word>
+                <word name="administraive~行政的">
+                    <sentence name="The manager is in charge of most of the administrative work in the office.">
+                        该经理负责公司大部分的行政管理工作。
+                    </sentence>
+                </word>
+                <word name="file~档案">
+                    <use name="keep...on file">
+                        将...建立档案
+                    </use>
+                    <sentence name="I need to file these letters carefully.">
+                        我需要将这些文件仔细归档。
+                    </sentence>
+                    <sentence name="John,would you keep this on file for me?">
+                        约翰，你可以帮我把这个建档吗？
+                    </sentence>
+                </word>
+                <word name="brief~向(某人)做简报">
+                    <use name="brief sb on/about sth">
+                        就某事像某人做简报
+                    </use>
+                    <sentence name="Could you brief me on the terms of this contract?">
+                        你可以为我就这份合约的条件做个简报吗。
+                    </sentence>
+                </word>
+                <word name="propose~提议">
+                    <use name="proposal">
+                        提案
+                    </use>
+                    <use name="propose that sb(should)">
+                        建议
+                    </use>
+                    <sentence name="I porpose that (should) hold an emergency meeting to discuss this issue.">
+                        我提议我们召开一个紧急会议来讨论此事。
+                    </sentence>
+                    <sentence name="I approved to the proposal.">
+                        我赞成该提案
+                    </sentence>
+                </word>
+                <word name="arrange~整理">
+                    <use name="arrangement">
+                        安排
+                    </use>
+                    <use name="arrange for sb to">
+                        安排某人从事...
+                    </use>
+                    <use name="arrange sth">
+                        安排某事
+                    </use>
+                    <use name="make an arrangement">
+                        做安排
+                    </use>
+                    <sentence name="I'll arrange for you to meet Mary.">
+                        我会安排你去见玛丽。
+                    </sentence>
+                    <sentence name="Don't worry,We'll arange a meeting to discuss the problem.">
+                        不用担心，我们会安排会议讨论该问题。
+                    </sentence>
+                    <sentence name="Sophis likes to arrange her art materials before class.">
+                        索菲亚喜欢在课前整理他们美术材料。
+                    </sentence>
+                </word>
+                <word name="collaborate~合作">
+                    <use name="collaboration">
+                        合作
+                    </use>
+                    <use name="collaborator">
+                        合作者
+                    </use>
+                    <use name="collaborate with...">
+                        和...合作
+                    </use>
+                    <sentence name="I can collaborate very well with others.">
+                        我能和其他人好好的合作。
+                    </sentence>
+                    <sentence name="I'm a collaborator and I can also work independently.">
+                        我擅长与人合作，但也能独立工作。
+                    </sentence>
+                </word>
+                <word name="operate~操作">
+                    <sentence name="I don't understand technical terms,so I can't operate the machine.">
+                        这些术语我看不懂，所以我无法操作这部机器。
+                    </sentence>
+                </word>
+                <word name="type~打字">
+                    <use name="typo">
+                        排印错误
+                    </use>
+                    <use name="typist">
+                        打字员
+                    </use>
+                    <use name="type sth up">
+                        把...打字成文
+                    </use>
+                    <sentence name="Ken types and takes shorthand very well.">
+                        肯擅长打字和速记。
+                    </sentence>
+                    <sentence name="Can you type this letter up for me?">
+                        你能帮我把信打出来吗？
+                    </sentence>
+                </word>
+                <word name="edit~编辑">
+                    <use name="editor">
+                        编辑
+                    </use>
+                    <sentence name="Mary's job is to select and edit videos.">
+                        玛丽的工作是挑选和剪辑视频。
+                    </sentence>
+                </word>
+            </scene>
+            <scene name="会计与财务报表">
+                <word name="account~账目">
+                    <use name="keep accounts">
+                        记账
+                    </use>
+                    <use name="bank account">
+                        银行账户
+                    </use>
+                    <use name="open (up) an acount">
+                        开户头
+                    </use>
+                    <sentence name="Kate is responsible for keeping detailed accounts.">
+                        凯特负责记明细账。
+                    </sentence>
+                    <sentence name="I will open an account at the bank across the street.">
+                        我要在对面的银行开立一个账户。
+                    </sentence>
+                </word>
+                <word name="balance~结余">
+                    <use name="bank balance">
+                        银行存款余额
+                    </use>
+                    <sentence name="Our bank balance went into the red in the first half of this year.">
+                        上半年我们的银行存款已出现了赤字。
+                    </sentence>
+                    <sentence name="The balance in my sccount is about $1,200.">
+                        我账户里的余额大概是1200美元。
+                    </sentence>
+                </word>
+                <word name="fianncial~金融的；财务的">
+                    <use name="financial">
+                        财务报表
+                    </use>
+                    <sentence name="Have you prepared a financial statement for the shareholders?">
+                        你给股东们准备好财务报表了吗？
+                    </sentence>
+                </word>
+
+                <word name="tax~税金；课税">
+                    <use name="pay taxes">
+                        缴税
+                    </use>
+                    <use name="file tax forms">
+                        填报税单
+                    </use>
+                    <sentence name="Many people think that the import tax on foreign goods is unreasonably high">
+                        很多人认为外国货的进口税搞到不合理。
+                    </sentence>
+                    <sentence name="All the goods should be taxed before they are sold.">
+                        所有的货皆须缴税后才能出售。
+                    </sentence>
+                </word>
+
+                <word name="debt~债务">
+                    <use name="be in debt">
+                        陷入债务中
+                    </use>
+                    <use name="be out of debt">
+                        脱离债务
+                    </use>
+                    <sentence name="Because of her crazy spending,Amy was in debt a couple of years ago.">
+                        由于艾米花钱很疯狂，几年前她就陷入债务中了。
+                    </sentence>
+                </word>
+
+                <word name="asset~资产（常用复数）；有价值的人或事物">
+                    <sentence name="Our company has sufficient liquid assets to continue operations.">
+                        我们公司有充足的流动资产来维持运营。
+                    </sentence>
+                    <sentence name="Laura proved to be an invaluable asset to the team.">
+                        劳拉证明了自己是团队里的宝贵资产。
+                    </sentence>
+                </word>
+
+                <word name="inventory~存货；存货清单">
+                    <use name="take inventory">
+                        清点盘存
+                    </use>
+                    <sentence name="We plan to take inventory of the warehouse stock tomorrow.">
+                        我们打算明天对仓库库存进行清点盘存。
+                    </sentence>
+                </word>
+
+                <word name="revenue~收入">
+                    <sentence name="Our company;s revenue rose 10% last year">
+                        上年我们公司的营业收入增长了10%。
+                    </sentence>
+                </word>
+
+                <word name="profit~利润；获益">
+                    <use name="profitable">
+                        有利润的
+                    </use>
+                    <use name="net profit margin">
+                        纯利润率
+                    </use>
+                    <use name="profit from...">
+                        从。。。中获益
+                    </use>
+                    <sentence name="The group had a net profit margin of 25% last year.">
+                        去年，这个集团的纯利润率为25%。
+                    </sentence>
+                    <sentence name="Many companies will profit from the huge drop in interest rates.">
+                        许多公司将因大幅度下降的利率而获利。
+                    </sentence>
+                </word>
+
+                <word name="audit~审计；查账">
+                    <sentence name="The Auditing Bureau will audit our accounts next week.">
+                        审计局下星期查我们单位的账。
+                    </sentence>
+                </word>
+            </scene>
+            <scene name="薪酬与福利">
+                <word name="pay~工资，薪水">
+                    <use name="pay raise">
+                        加薪
+                    </use>
+                    <use name="pay claim">
+                        加薪的要求
+                    </use>
+                    <sentence name="It's an interesting job but the pay is too low">
+                        这份工作很有趣，但工资太低。
+                    </sentence>
+                    <sentence name="Allen asked for a pay raise yesterday">
+                        艾伦昨天要求加薪。
+                    </sentence>
+                </word>
+
+                <word name="wage~时薪">
+                    <use name="base salary">
+                        基本月薪
+                    </use>
+                    <sentence name="Alice is on quite a good salary in her present job.">
+                        爱丽丝目前的工作薪水相当丰厚。
+                    </sentence>
+                </word>
+
+                <word name="dividend~红利；股息">
+                    <use name="distribute dividends">
+                        分红
+                    </use>
+                    <use name="pay company">
+                        产生益处
+                    </use>
+                    <sentence name="The company distributed dividends to its shareholders.">
+                        公司分红给股东了。
+                    </sentence>
+                </word>
+
+                <word name="pension~退休金；养老金">
+                    <use name="receive a retirement pension">
+                        获得退休金
+                    </use>
+                    <use name="live on/off a pension">
+                        靠养老金过活
+                    </use>
+                </word>
+
+                <word name="benefit~得益；有益于；利益">
+                    <use name="benefit from">
+                        自。。。获益
+                    </use>
+                    <sentence name="This job is great in terms of salary and benefits.">
+                        该薪水和福利而言这份工作很不错。
+                    </sentence>
+                    <sentence name="It's mean to benefit from others' misfortunes.">
+                        利用鄙人的不幸获取收益是件卑鄙的事。
+                    </sentence>
+                </word>
+
+                <word name="day off~休假日；休息日">
+                    <use name="take/have a day off">
+                        请假
+                    </use>
+                    <sentence name="Jane took a day off just to relax at home.">
+                        简请了一天假，待在家里放松一下。
+                    </sentence>
+                </word>
+
+                <word name="leave~假期">
+                    <use name="maternity leave">
+                        产假
+                    </use>
+                    <use name="sick leave">
+                        病假
+                    </use>
+                    <sentence name="Maria is on her maternity leave">
+                        玛丽亚在休产假
+                    </sentence>
+                    <sentence name="Louise took sick leave yesterday.">
+                        昨天路易斯请了病假
+                    </sentence>
+                </word>
+
+                <word name="quit~辞职；离开；放弃">
+                    <sentence name="Why did you quit your last job?">
+                        你为什么会辞去上一份工作？
+                    </sentence>
+                </word>
+            </scene>
+        </chapter>
+    </part>
+</english>
+
+
+
+
