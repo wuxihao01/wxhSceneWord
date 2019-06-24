@@ -17,6 +17,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
 import java.util.List;
@@ -76,7 +78,7 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mPresenter=new ShowFragmentPresenter(getContext());
-        initView();
+        initView(view);
         initEvent();
     }
 
@@ -84,12 +86,20 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
 
     }
 
-    private void initView() {
+    private void initView(View view) {
         mUsageAdapter=new UsageMethodAdapter(getContext());
         mSentenceAdapter=new SentenceAdapter(getContext());
         Bundle bundle=getArguments();
         word=bundle.getString("word");
         mWordEnglish.setText(word);
+        YoYo.with(Techniques.FlipInX)
+                .duration(900)
+                .repeat(0)
+                .playOn(view.findViewById(R.id.tv_detail_English));
+        YoYo.with(Techniques.FlipInY)
+                .duration(900)
+                .repeat(0)
+                .playOn(view.findViewById(R.id.tv_detail_chinese));
         mSentenceRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mUsageRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mSentenceRecyclerView.setItemAnimator(new SlideInLeftAnimator());

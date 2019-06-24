@@ -21,6 +21,8 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.cazaea.sweetalert.SweetAlertDialog;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.MainActivity;
 import com.wxh.wxhsceneword.R;
 import java.util.List;
@@ -35,6 +37,7 @@ import contract.ReadWriteContract;
 import contract.ShowFragmentContract;
 import entry.Part;
 import entry.XmlList;
+import es.dmoral.toasty.Toasty;
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
 import jp.wasabeef.recyclerview.animators.SlideInLeftAnimator;
 import presenter.ReadWritePresenter;
@@ -55,6 +58,7 @@ public class PartFragment extends BaseFragment implements ShowFragmentContract.P
     private List<Part> mDataList;
     private PartAdapter adapter;
     private Unbinder unbinder;
+    private View view;
     public PartFragment() {
         // Required empty public constructor
     }
@@ -69,7 +73,7 @@ public class PartFragment extends BaseFragment implements ShowFragmentContract.P
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_part, container, false);
+        view=inflater.inflate(R.layout.fragment_part, container, false);
         unbinder= ButterKnife.bind(this,view);
         return view;
     }
@@ -179,6 +183,10 @@ public class PartFragment extends BaseFragment implements ShowFragmentContract.P
 
     @OnClick(R.id.part_add)
     void addPart(){
+        YoYo.with(Techniques.Tada)
+                .duration(700)
+                .repeat(0)
+                .playOn(view.findViewById(R.id.part_add));
         final View layout=LayoutInflater.from(getContext()).inflate(R.layout.dialog_part,null,false);
         LinearLayout chineseLayout=(LinearLayout) layout.findViewById(R.id.layout_chinese);
         chineseLayout.setVisibility(View.GONE);
@@ -192,9 +200,9 @@ public class PartFragment extends BaseFragment implements ShowFragmentContract.P
                         Part part=new Part();
                         part.setPartID(name);
                         if(mPresenter.querryPary(name)){
-                            Toast.makeText(getContext(),"该Part已存在，请重新输入！",Toast.LENGTH_SHORT).show();
+                            Toasty.error(getContext(), "该Part已存在，请重新输入！", Toast.LENGTH_SHORT, true).show();
                         }else {
-                            Toast.makeText(getContext(),"添加成功！",Toast.LENGTH_SHORT).show();
+                            Toasty.success(getContext(), "添加成功！", Toast.LENGTH_SHORT, true).show();
                             mPresenter.addPart(part);
                             mDataList.add(part);
                             adapter.addData(part,mDataList.size());

@@ -20,6 +20,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cazaea.sweetalert.SweetAlertDialog;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
 import java.util.List;
@@ -32,6 +34,7 @@ import butterknife.OnClick;
 import butterknife.Unbinder;
 import contract.ShowFragmentContract;
 import entry.Chapter;
+import es.dmoral.toasty.Toasty;
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
 import jp.wasabeef.recyclerview.animators.SlideInLeftAnimator;
 import presenter.ShowFragmentPresenter;
@@ -51,6 +54,7 @@ public class ChapterFragment extends BaseFragment implements ShowFragmentContrac
     private List<Chapter> mDataList;
     private ChapterAdapter adapter;
     private String belong;
+    private View view;
     private Unbinder unbinder;
     public ChapterFragment() {
         // Required empty public constructor
@@ -66,7 +70,7 @@ public class ChapterFragment extends BaseFragment implements ShowFragmentContrac
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_chapter, container, false);
+        view=inflater.inflate(R.layout.fragment_chapter, container, false);
         unbinder= ButterKnife.bind(this,view);
         return view;
     }
@@ -181,6 +185,10 @@ public class ChapterFragment extends BaseFragment implements ShowFragmentContrac
 
     @OnClick(R.id.chapter_add)
     void addChapter(){
+        YoYo.with(Techniques.Tada)
+                .duration(700)
+                .repeat(0)
+                .playOn(view.findViewById(R.id.chapter_add));
         final View layout=LayoutInflater.from(getContext()).inflate(R.layout.dialog_part,null,false);
         TextView textView1=(TextView)layout.findViewById(R.id.ed_name);
         textView1.setText("Chapter Name");
@@ -197,16 +205,16 @@ public class ChapterFragment extends BaseFragment implements ShowFragmentContrac
                         chapter.setBelongPart(belong);
                         chapter.setChapterName(name);
                         if(mPresenter.querryChapter(name)){
-                            Toast.makeText(getContext(),"该Chapter已存在，请重新输入！",Toast.LENGTH_SHORT).show();
+                            Toasty.error(getContext(), "该Chapter已存在，请重新输入！", Toast.LENGTH_SHORT, true).show();
                         }else {
                             if(mPresenter.querryPary(belong)){
-                                Toast.makeText(getContext(),"添加成功！",Toast.LENGTH_SHORT).show();
+                                Toasty.success(getContext(), "添加成功！", Toast.LENGTH_SHORT, true).show();
                                 mPresenter.addChapter(chapter);
                                 mDataList.add(chapter);
                                 adapter.addData(chapter,mDataList.size());
                             }
                             else {
-                                Toast.makeText(getContext(),"所属的Part不存在，请查阅后再添加！",Toast.LENGTH_SHORT).show();
+                                Toasty.error(getContext(), "所属的Part不存在，请查阅后再添加！", Toast.LENGTH_SHORT, true).show();
                             }
                         }
                     }

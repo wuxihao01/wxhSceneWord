@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
 import base.BaseRecyclerViewAdapter;
@@ -36,7 +38,7 @@ public class PartAdapter extends BaseRecyclerViewAdapter<Part, PartAdapter.PartV
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PartViewHolder partViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final PartViewHolder partViewHolder, final int i) {
         Part item=mDataSource.get(i);
         if(item==null)return;
         partViewHolder.textView.setText(item.getPartID());
@@ -62,6 +64,10 @@ public class PartAdapter extends BaseRecyclerViewAdapter<Part, PartAdapter.PartV
             @Override
             public void onClick(View v) {
                 if(mOuterListener!=null){
+                    YoYo.with(Techniques.Tada)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(partViewHolder.delImg);
                     mOuterListener.onItemDelete(v,i);
                 }
             }

@@ -36,6 +36,7 @@ import entry.Scene;
 import entry.UsageMethod;
 import entry.Word;
 import entry.XmlList;
+import es.dmoral.toasty.Toasty;
 import presenter.ReadWritePresenter;
 import presenter.ShowFragmentPresenter;
 
@@ -124,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
         switch (choose){
             case "Scene":{
                 if(!showPresenter.querryScene(values)){
-                    Toast.makeText(getApplicationContext(),"该Sence不存在",Toast.LENGTH_SHORT).show();
+                    Toasty.error(getApplicationContext(), "该Sence不存在", Toast.LENGTH_SHORT, true).show();
                     return;
                 }
                 bundle.putString("type","scene");
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
             }break;
             case "English":{
                 if(!showPresenter.querryWord(values)){
-                    Toast.makeText(getApplicationContext(),"该单词不存在",Toast.LENGTH_SHORT).show();
+                    Toasty.error(getApplicationContext(), "该单词不存在", Toast.LENGTH_SHORT, true).show();
                     return;
                 }
                 bundle.putString("type","english");
@@ -140,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
             }break;
             case "Chinese":{
                 if (!showPresenter.querryWordByChinese(values)){
-                    Toast.makeText(getApplicationContext(),"该中文不存在",Toast.LENGTH_SHORT).show();
+                    Toasty.error(getApplicationContext(), "该中文不存在", Toast.LENGTH_SHORT, true).show();
                     return;
                 }
                 bundle.putString("type","chinese");

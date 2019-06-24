@@ -21,6 +21,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cazaea.sweetalert.SweetAlertDialog;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.MainActivity;
 import com.wxh.wxhsceneword.R;
 
@@ -35,6 +37,7 @@ import butterknife.Unbinder;
 import contract.ShowFragmentContract;
 import entry.Scene;
 import entry.Word;
+import es.dmoral.toasty.Toasty;
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
 import jp.wasabeef.recyclerview.animators.SlideInLeftAnimator;
 import presenter.ShowFragmentPresenter;
@@ -54,6 +57,7 @@ public class WordListFragment extends BaseFragment implements ShowFragmentContra
     public String type;
     private List<Word> mDataList;
     private Unbinder unbinder;
+    private View view;
     private String belong;
     public WordListFragment() {
         // Required empty public constructor
@@ -68,7 +72,7 @@ public class WordListFragment extends BaseFragment implements ShowFragmentContra
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_word_list, container, false);
+        view=inflater.inflate(R.layout.fragment_word_list, container, false);
         unbinder= ButterKnife.bind(this,view);
         return view;
     }
@@ -209,6 +213,10 @@ public class WordListFragment extends BaseFragment implements ShowFragmentContra
 
     @OnClick(R.id.word_add)
     void addWord(){
+        YoYo.with(Techniques.Tada)
+                .duration(700)
+                .repeat(0)
+                .playOn(view.findViewById(R.id.word_add));
         final View layout=LayoutInflater.from(getContext()).inflate(R.layout.dialog_part,null,false);
         TextView englishText=(TextView)layout.findViewById(R.id.ed_name);
         englishText.setText("English Name:");
@@ -228,17 +236,16 @@ public class WordListFragment extends BaseFragment implements ShowFragmentContra
                         item.setEnglish(name);
                         item.setChinese(chinese);
                         if(mPresenter.querryWord(name)){
-                            Toast.makeText(getContext(),"该Word已存在，请重新输入！",Toast.LENGTH_SHORT).show();
+                            Toasty.error(getContext(), "该Word已存在，请重新输入！", Toast.LENGTH_SHORT, true).show();
                         }else {
                             if(mPresenter.querryScene(belong)){
-                                Toast.makeText(getContext(),"添加成功！",Toast.LENGTH_SHORT).show();
+                                Toasty.success(getContext(), "添加成功！", Toast.LENGTH_SHORT, true).show();
                                 mPresenter.addWord(item);
                                 mDataList.add(item);
                                 adapter.addData(item,mDataList.size());
                             }
                             else {
-                                Toast.makeText(getContext(),"所属的Scene不存在，请查阅后再添加！",Toast.LENGTH_SHORT).show();
-
+                                Toasty.error(getContext(), "所属的Scene不存在，请查阅后再添加！", Toast.LENGTH_SHORT, true).show();
                             }
                         }
                     }

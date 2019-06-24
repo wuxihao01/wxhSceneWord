@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
 import org.w3c.dom.Text;
@@ -36,7 +38,7 @@ public class ChapterAdapter extends BaseRecyclerViewAdapter<Chapter, ChapterAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ChapterViewHolder chapterViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final ChapterViewHolder chapterViewHolder, final int i) {
         Chapter item=mDataSource.get(i);
         if(item==null)return;
         chapterViewHolder.textView.setText(item.getChapterName());
@@ -62,6 +64,10 @@ public class ChapterAdapter extends BaseRecyclerViewAdapter<Chapter, ChapterAdap
             @Override
             public void onClick(View v) {
                 if(mOuterListener!=null){
+                    YoYo.with(Techniques.Tada)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(chapterViewHolder.delImg);
                     mOuterListener.onItemDelete(v,i);
                 }
             }

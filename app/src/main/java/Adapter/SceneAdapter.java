@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
 import base.BaseRecyclerViewAdapter;
@@ -34,7 +36,7 @@ public class SceneAdapter extends BaseRecyclerViewAdapter<Scene, SceneAdapter.Sc
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SceneViewHolder sceneViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final SceneViewHolder sceneViewHolder, final int i) {
         Scene item=mDataSource.get(i);
         if(item==null)return;
         sceneViewHolder.textView.setText(item.getSceneName());
@@ -59,6 +61,10 @@ public class SceneAdapter extends BaseRecyclerViewAdapter<Scene, SceneAdapter.Sc
             @Override
             public void onClick(View v) {
                 if(mOuterListener!=null){
+                    YoYo.with(Techniques.Tada)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(sceneViewHolder.delImg);
                     mOuterListener.onItemDelete(v,i);
                 }
             }

@@ -36,6 +36,10 @@ dependencies {
     implementation 'com.github.cazaea:sweet-alert-dialog:1.0.0'
     compile 'me.spark:submitbutton:1.0.1'
     implementation 'com.github.arcadefire:nice-spinner:1.4.3'
+    compile 'com.android.support:support-compat:28.0.0'
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
 }
 
 greendao {

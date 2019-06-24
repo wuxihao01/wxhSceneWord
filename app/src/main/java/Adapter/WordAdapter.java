@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
 import base.BaseRecyclerViewAdapter;
@@ -34,7 +36,7 @@ public class WordAdapter extends BaseRecyclerViewAdapter<Word, WordAdapter.WordV
     }
 
     @Override
-    public void onBindViewHolder(@NonNull WordViewHolder wordViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final WordViewHolder wordViewHolder, final int i) {
         Word item=mDataSource.get(i);
         if(item==null)return;
         wordViewHolder.textView.setText(item.getEnglish());
@@ -59,6 +61,10 @@ public class WordAdapter extends BaseRecyclerViewAdapter<Word, WordAdapter.WordV
             @Override
             public void onClick(View v) {
                 if(mOuterListener!=null){
+                    YoYo.with(Techniques.Tada)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(wordViewHolder.delImg);
                     mOuterListener.onItemDelete(v,i);
                 }
             }

@@ -20,6 +20,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cazaea.sweetalert.SweetAlertDialog;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
 import java.util.List;
@@ -33,6 +35,7 @@ import butterknife.Unbinder;
 import contract.ShowFragmentContract;
 import entry.Chapter;
 import entry.Scene;
+import es.dmoral.toasty.Toasty;
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
 import jp.wasabeef.recyclerview.animators.SlideInLeftAnimator;
 import presenter.ShowFragmentPresenter;
@@ -51,6 +54,7 @@ public class SceneFragment extends BaseFragment implements ShowFragmentContract.
     private ShowFragmentPresenter mPresenter;
     private SceneAdapter adapter;
     private String belong;
+    private View view;
     private List<Scene> mDataList;
     private Unbinder unbinder;
     public SceneFragment() {
@@ -66,7 +70,7 @@ public class SceneFragment extends BaseFragment implements ShowFragmentContract.
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_scene, container, false);
+        view=inflater.inflate(R.layout.fragment_scene, container, false);
         unbinder= ButterKnife.bind(this,view);
         return view;
     }
@@ -179,6 +183,10 @@ public class SceneFragment extends BaseFragment implements ShowFragmentContract.
     }
     @OnClick(R.id.scene_add)
     void addScene(){
+        YoYo.with(Techniques.Tada)
+                .duration(700)
+                .repeat(0)
+                .playOn(view.findViewById(R.id.scene_add));
         final View layout=LayoutInflater.from(getContext()).inflate(R.layout.dialog_part,null,false);
         TextView textView1=(TextView)layout.findViewById(R.id.ed_name);
         textView1.setText("Scene Name");
@@ -195,16 +203,16 @@ public class SceneFragment extends BaseFragment implements ShowFragmentContract.
                         item.setBelongChapter(belong);
                         item.setSceneName(name);
                         if(mPresenter.querryScene(name)){
-                            Toast.makeText(getContext(),"该Scene已存在，请重新输入！",Toast.LENGTH_SHORT).show();
+                            Toasty.error(getContext(), "该Scene已存在，请重新输入！", Toast.LENGTH_SHORT, true).show();
                         }else {
                             if(mPresenter.querryChapter(belong)){
-                                Toast.makeText(getContext(),"添加成功！",Toast.LENGTH_SHORT).show();
+                                Toasty.success(getContext(), "添加成功！", Toast.LENGTH_SHORT, true).show();
                                 mPresenter.addScene(item);
                                 mDataList.add(item);
                                 adapter.addData(item,mDataList.size());
                             }
                             else {
-                                Toast.makeText(getContext(),"所属的Chapter不存在，请查阅后再添加！",Toast.LENGTH_SHORT).show();
+                                Toasty.error(getContext(), "所属的Chapter不存在，请查阅后再添加！", Toast.LENGTH_SHORT, true).show();
                             }
                         }
                     }
