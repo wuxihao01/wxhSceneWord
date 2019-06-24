@@ -53,7 +53,10 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
     RecyclerView mUsageRecyclerView;
     @BindView(R.id.sound)
     ImageView sound;
-
+    @BindView(R.id.tv_word_top)
+    TextView topText;
+    @BindView(R.id.tv_word_buttom)
+    TextView buttomText;
 
     private String word;
     private Unbinder unbinder;
@@ -87,6 +90,14 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
     }
 
     private void initView(View view) {
+        YoYo.with(Techniques.ZoomInDown)
+                .duration(900)
+                .repeat(0)
+                .playOn(view.findViewById(R.id.tv_word_top));
+        YoYo.with(Techniques.ZoomInDown)
+                .duration(900)
+                .repeat(0)
+                .playOn(view.findViewById(R.id.tv_word_buttom));
         mUsageAdapter=new UsageMethodAdapter(getContext());
         mSentenceAdapter=new SentenceAdapter(getContext());
         Bundle bundle=getArguments();
