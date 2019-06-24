@@ -63,8 +63,7 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
     private ShowFragmentPresenter mPresenter;
     private UsageMethodAdapter mUsageAdapter;
     private SentenceAdapter mSentenceAdapter;
-    private int currentProgress = 0;
-    private Handler handle=new Handler();
+
 
     public WordFragment() {
         // Required empty public constructor

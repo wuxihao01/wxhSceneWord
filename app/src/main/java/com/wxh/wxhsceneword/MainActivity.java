@@ -1,15 +1,21 @@
 package com.wxh.wxhsceneword;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.view.Window;
+import android.view.WindowManager;
+
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
+
 import android.widget.Toast;
 
 
@@ -18,7 +24,6 @@ import com.spark.submitbutton.SubmitButton;
 import org.angmarch.views.NiceSpinner;
 import org.angmarch.views.OnSpinnerItemSelectedListener;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -26,7 +31,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.OnItemSelected;
 import butterknife.Unbinder;
 import contract.ReadWriteContract;
 import entry.Chapter;
@@ -53,6 +57,13 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
     List<Word> wordList;
     List<UsageMethod> usageMethodList;
     List<ExampleSentence> sentenceList;
+    //读写权限
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE};
+    //请求状态码
+    private static int REQUEST_PERMISSION_CODE = 1;
+
 
     @BindView(R.id.write)
     SubmitButton write;
@@ -64,9 +75,14 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
     Button searchBtn;
     @BindView(R.id.ed_search)
     EditText searchEdit;
+    @BindView(R.id.writeToXml)
+    SubmitButton writeToXml;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         initEvent();
         unbinder= ButterKnife.bind(this);
@@ -76,9 +92,6 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
     }
 
     private void initView() {
-    }
-
-    private void initEvent() {
         NiceSpinner niceSpinner=(NiceSpinner) findViewById(R.id.nice_spinner);
         List<String> dataset = new LinkedList<>(Arrays.asList("Scene","English","Chinese"));
         niceSpinner.attachDataSource(dataset);
@@ -90,6 +103,23 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
         });
     }
 
+    private void initEvent() {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, PERMISSIONS_STORAGE, REQUEST_PERMISSION_CODE);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQUEST_PERMISSION_CODE) {
+            for (int i = 0; i < permissions.length; i++) {
+                Log.i("MainActivity", "申请的权限为：" + permissions[i] + ",申请结果：" + grantResults[i]);
+            }
+        }
+    }
 
     @Override
     protected void onDestroy() {
@@ -99,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
 
     @OnClick(R.id.readFromXML)
     public void getWord(){
+        fb1.setEnabled(false);
         mPresenter.readFromXML();
     }
 
@@ -113,6 +144,7 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
 
     @OnClick(R.id.write)
     public void writeToDB(){
+        write.setEnabled(false);
         mPresenter.partWriteToDB(mXmlList);
     }
 
@@ -152,6 +184,12 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
         startActivity(intent);
     }
 
+    @OnClick(R.id.writeToXml)
+    void writOutXml(){
+        writeToXml.setEnabled(false);
+        mPresenter.writeToXml();
+    }
+
     @Override
     public void getAllDB(XmlList xmlList) {
         mXmlList=xmlList;
@@ -180,5 +218,16 @@ public class MainActivity extends AppCompatActivity implements ReadWriteContract
             Log.d("ummmmm","sentencename:"+item.getSentenceE()+"      sentenceChinese:"+item.getSentenceC()+"   sentencebelong:"+item.getBelongWord());
         }
     }
+
+    @Override
+    public void showResult(Boolean isSuccess) {
+        if(isSuccess){
+            Toasty.success(getApplicationContext(), "Xml成功生成！", Toast.LENGTH_SHORT, true).show();
+        }
+        else{
+            Toasty.error(getApplicationContext(), "Xml生成失败", Toast.LENGTH_SHORT, true).show();
+        }
+    }
+
 
 }

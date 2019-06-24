@@ -1,8 +1,6 @@
 package presenter;
 
 import android.content.Context;
-import android.util.Log;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -14,7 +12,6 @@ import entry.Part;
 import entry.Scene;
 import entry.UsageMethod;
 import entry.Word;
-import entry.XmlList;
 import module.DataBaseDao;
 
 public class ShowFragmentPresenter extends BaseMvpPresenter implements ShowFragmentContract.Presenter {

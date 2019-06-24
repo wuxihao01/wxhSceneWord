@@ -9,8 +9,12 @@ public interface ReadWriteContract {
 
         void readFromXML();
 
+        void writeToXml();
     }
     interface View{
         void getAllDB(XmlList xmlList);
+
+        //显示XML是否成功生成
+        void showResult(Boolean isSuccess);
     }
 }

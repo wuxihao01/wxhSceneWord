@@ -13,7 +13,6 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
-import org.w3c.dom.Text;
 
 import base.BaseRecyclerViewAdapter;
 import entry.Chapter;
