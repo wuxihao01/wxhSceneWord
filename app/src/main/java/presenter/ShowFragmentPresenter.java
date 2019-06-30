@@ -75,6 +75,16 @@ public class ShowFragmentPresenter extends BaseMvpPresenter implements ShowFragm
     }
 
     @Override
+    public void removeUsageMethod(String name) {
+        dao.delUsageMethod(name);
+    }
+
+    @Override
+    public void removeSentence(String name) {
+        dao.delSentence(name);
+    }
+
+    @Override
     public void addPart(Part part) {
         dao.addPart(part);
     }

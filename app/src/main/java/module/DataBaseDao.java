@@ -146,7 +146,7 @@ public class DataBaseDao {
 
     public void delUsageMethod(String name){
         mDaoSession.getUsageMethodDao().queryBuilder()
-                .where(PartDao.Properties.PartID.eq(name))
+                .where(UsageMethodDao.Properties.UseWord.eq(name))
                 .buildDelete()
                 .executeDeleteWithoutDetachingEntities();
     }
@@ -161,7 +161,7 @@ public class DataBaseDao {
 
     public void delSentence(String name){
         mDaoSession.getExampleSentenceDao().queryBuilder()
-                .where(PartDao.Properties.PartID.eq(name))
+                .where(ExampleSentenceDao.Properties.SentenceE.eq(name))
                 .buildDelete()
                 .executeDeleteWithoutDetachingEntities();
     }

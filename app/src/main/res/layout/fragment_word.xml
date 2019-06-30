@@ -72,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:layout_marginBottom="10dp"
+                android:drawableRight="@drawable/plus"
                 android:text="词汇的词组⽤法及中⽂释义或英⽂同义表达:"/>
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/usage_recyclerview"
@@ -91,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:layout_marginBottom="10dp"
+                android:drawableRight="@drawable/plus"
                 android:text="词汇或词组的英⽂句⼦表达及中⽂释义"/>
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/sentence_recyclerview"

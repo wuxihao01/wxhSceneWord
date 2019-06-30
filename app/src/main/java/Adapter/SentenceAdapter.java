@@ -14,6 +14,9 @@ import base.BaseRecyclerViewAdapter;
 import entry.ExampleSentence;
 
 public class SentenceAdapter extends BaseRecyclerViewAdapter<ExampleSentence, SentenceAdapter.SentenceViewHolder> {
+
+    public delListener mDelListener;
+
     /**
      * 构造方法
      *
@@ -21,6 +24,10 @@ public class SentenceAdapter extends BaseRecyclerViewAdapter<ExampleSentence, Se
      */
     public SentenceAdapter(Context context) {
         super(context);
+    }
+
+    public void setmDelListener(delListener mDelListener) {
+        this.mDelListener = mDelListener;
     }
 
     @NonNull
@@ -32,11 +39,17 @@ public class SentenceAdapter extends BaseRecyclerViewAdapter<ExampleSentence, Se
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SentenceViewHolder sentenceViewHolder, int i) {
+    public void onBindViewHolder(@NonNull SentenceViewHolder sentenceViewHolder, final int i) {
         ExampleSentence item=mDataSource.get(i);
         if(item==null)return;
         sentenceViewHolder.Chinese.setText(item.getSentenceC());
         sentenceViewHolder.English.setText(item.getSentenceE());
+        sentenceViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDelListener.onItemDel(v,i);
+            }
+        });
     }
 
     class SentenceViewHolder extends RecyclerView.ViewHolder{
@@ -48,5 +61,9 @@ public class SentenceAdapter extends BaseRecyclerViewAdapter<ExampleSentence, Se
             Chinese=itemView.findViewById(R.id.tv_detail__sample_chinese);
             English=itemView.findViewById(R.id.tv_detail_sample_english);
         }
+    }
+
+    public interface delListener{
+        void onItemDel(View view, int position);
     }
 }

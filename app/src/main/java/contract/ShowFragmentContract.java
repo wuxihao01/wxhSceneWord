@@ -33,6 +33,10 @@ public interface ShowFragmentContract {
 
         public void removeWord(String name);
 
+        public void removeUsageMethod(String name);
+
+        public void removeSentence(String name);
+
         public void addPart(Part part);
 
         public void addChapter(Chapter chapter);

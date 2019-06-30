@@ -36,6 +36,16 @@
         android:textColor="@color/white"
         app:sub_btn_duration="3000" />
 
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/write"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="写入数据库"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:sub_btn_duration="3000"
+        app:sub_btn_tick_color="@color/white" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,13 +112,4 @@
             android:background="@drawable/btn_search"/>
     </LinearLayout>
 
-    <com.spark.submitbutton.SubmitButton
-        android:id="@+id/write"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="写入数据库"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:sub_btn_duration="3000"
-        app:sub_btn_tick_color="@color/white" />
 </LinearLayout>

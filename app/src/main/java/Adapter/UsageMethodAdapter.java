@@ -14,6 +14,8 @@ import base.BaseRecyclerViewAdapter;
 import entry.UsageMethod;
 
 public class UsageMethodAdapter extends BaseRecyclerViewAdapter<UsageMethod, UsageMethodAdapter.UsageMethodViewHolder> {
+    public delUsageListener mDelListener;
+
     /**
      * 构造方法
      *
@@ -23,6 +25,10 @@ public class UsageMethodAdapter extends BaseRecyclerViewAdapter<UsageMethod, Usa
         super(context);
     }
 
+
+    public void setmDelListener(delUsageListener mDelListener){
+        this.mDelListener=mDelListener;
+    }
     @NonNull
     @Override
     public UsageMethodViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -32,11 +38,19 @@ public class UsageMethodAdapter extends BaseRecyclerViewAdapter<UsageMethod, Usa
     }
 
     @Override
-    public void onBindViewHolder(@NonNull UsageMethodViewHolder usageMethodViewHolder, int i) {
+    public void onBindViewHolder(@NonNull UsageMethodViewHolder usageMethodViewHolder, final int i) {
         UsageMethod item=mDataSource.get(i);
         if(item==null)return;
         usageMethodViewHolder.Chinese.setText(item.getUseChinese());
         usageMethodViewHolder.English.setText(item.getUseWord());
+        usageMethodViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mDelListener!=null){
+                    mDelListener.delUsage(v,i);
+                }
+            }
+        });
     }
 
     class UsageMethodViewHolder extends RecyclerView.ViewHolder{
@@ -48,5 +62,9 @@ public class UsageMethodAdapter extends BaseRecyclerViewAdapter<UsageMethod, Usa
             Chinese=itemView.findViewById(R.id.tv_detail__sample_chinese);
             English=itemView.findViewById(R.id.tv_detail_sample_english);
         }
+    }
+
+    public interface delUsageListener{
+        void delUsage(View view, int position);
     }
 }
