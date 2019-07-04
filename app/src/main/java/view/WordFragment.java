@@ -4,6 +4,8 @@ package view;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.res.AssetFileDescriptor;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -26,6 +28,7 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.wxh.wxhsceneword.R;
 
+import java.io.IOException;
 import java.util.List;
 
 import Adapter.SentenceAdapter;
@@ -71,6 +74,7 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
     private SentenceAdapter mSentenceAdapter;
     private List<UsageMethod> mUsageMethodList;
     private List<ExampleSentence> mSentenceList;
+    private View mView;
 
     public WordFragment() {
         // Required empty public constructor
@@ -97,6 +101,7 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
     }
 
     private void initView(View view) {
+        mView=view;
         YoYo.with(Techniques.ZoomInDown)
                 .duration(900)
                 .repeat(0)
@@ -158,7 +163,19 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
 
     @OnClick(R.id.sound)
     void readWord(){
-        Toast.makeText(getContext(),"录音开始播放",Toast.LENGTH_SHORT).show();
+        YoYo.with(Techniques.Tada)
+                .duration(900)
+                .repeat(0)
+                .playOn(mView.findViewById(R.id.sound));
+        try {
+            AssetFileDescriptor fd = getResources().getAssets().openFd(word+".mp3");
+            MediaPlayer mediaPlayer = new MediaPlayer();
+            mediaPlayer.setDataSource(fd.getFileDescriptor(), fd.getStartOffset(), fd.getLength());
+            mediaPlayer.prepare();
+            mediaPlayer.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -176,7 +193,7 @@ public class WordFragment extends BaseFragment implements ShowFragmentContract.W
         textView.setText("UsageMethod");
         TextView textView1=(TextView) layout.findViewById(R.id.ed_chinese);
         textView1.setText("UsageMethod Chinese");
-        new AlertDialog.Builder(getContext()).setTitle("添加part")
+        new AlertDialog.Builder(getContext()).setTitle("添加UsageMethod")
                 .setView(layout)
                 .setPositiveButton("确定",new DialogInterface.OnClickListener() {
                     @Override
